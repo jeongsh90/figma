@@ -1,0 +1,39 @@
+.bg-line {
+  position: absolute;
+  --line-spacing : 8px;
+  opacity: .15;
+}
+
+.bg-line--horizontal {
+  left: 50%;
+  width:calc(100% - (var(--spacing) * 16));
+  height: calc(var(--spacing) * 2);
+  background-image: linear-gradient( to right, var(--color-fg) 0px, var(--color-fg) 1px, transparent 1px, transparent var(--line-spacing) );
+  background-size: var(--line-spacing) 100%;
+  transform: translateX(-50%);
+}
+
+.bg-line--vertical {
+  top: 50%;
+  width: calc(var(--spacing) * 2);
+  height: calc(100% - (var(--spacing) * 16));
+  background-image: linear-gradient( to bottom, var(--color-fg) 0px, var(--color-fg) 1px, transparent 1px, transparent  var(--line-spacing));
+  background-size: 100% var(--line-spacing);
+  transform: translateY(-50%);
+}
+
+.bg-line--top {
+  top: calc(var(--spacing) * 3.35);
+}
+
+.bg-line--bottom {
+  bottom: calc(var(--spacing) * 3.35);
+}
+
+.bg-line--left {
+  left: calc(var(--spacing) * 3.35);
+}
+
+.bg-line--right {
+  right: calc(var(--spacing) * 3.35);
+}

@@ -17,6 +17,19 @@
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --int32-max: 2147483647;
+
+  --color-black: #171717;
+  --color-orange: #f25623;
+  --color-dark-gray: #4d4d4d;
+  --color-light-gray: #dedede;
+
+  --color-bg: var(--color-light-gray);
+  --color-surface: var(--color-dark-gray);
+  --color-accent: var(--color-orange);
+  --color-fg: var(--color-black);
+
+  --grid-columns: 12;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -118,19 +131,39 @@
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.scroll-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid var(--color-surface);
+  background: var(--color-bg);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   margin: 0;
+  padding: calc(var(--spacing) * 2);
+  overflow: hidden;
+  box-sizing: border-box;
+  background: var(--color-bg);
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: calc(var(--spacing) * 2);
+  }
 }
 
 h1,

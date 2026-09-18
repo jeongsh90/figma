@@ -1,0 +1,39 @@
+.site-cta {
+  background: var(--color-bg);
+  padding-block: calc(var(--spacing) * 30);
+  border-bottom: 1px solid var(--color-surface);
+}
+
+.site-cta__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(var(--spacing) * 6);
+  flex-wrap: wrap;
+}
+
+.site-cta__title {
+  font-family: 'Roboto Serif', var(--sans);
+  font-size: clamp(32px, 5vw, 56px);
+  line-height: 1.05;
+  color: var(--color-fg);
+  margin: 0;
+}
+
+.site-cta__button {
+  font-family: 'Pretendard', var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-fg);
+  background: var(--color-accent);
+  padding: calc(var(--spacing) * 4) calc(var(--spacing) * 8);
+  border-radius: 999px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .site-cta {
+    padding-block: calc(var(--spacing) * 16);
+  }
+}

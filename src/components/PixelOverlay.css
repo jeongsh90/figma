@@ -1,0 +1,13 @@
+.pixel-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--int32-max);
+  display: grid;
+  grid-template-columns: repeat(var(--pixel-overlay-columns), 1fr);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.pixel-overlay__cell {
+  background: var(--text-h);
+}

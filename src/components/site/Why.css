@@ -1,0 +1,30 @@
+.site-why {
+  background: var(--color-bg);
+  padding-block: calc(var(--spacing) * 30);
+  border-bottom: 1px solid var(--color-surface);
+}
+
+.site-why__eyebrow {
+  font-family: 'Pretendard', var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 calc(var(--spacing) * 6);
+}
+
+.site-why__statement {
+  font-family: 'Roboto Serif', var(--sans);
+  font-size: clamp(24px, 3.6vw, 40px);
+  line-height: 1.3;
+  color: var(--color-fg);
+  max-width: 900px;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .site-why {
+    padding-block: calc(var(--spacing) * 16);
+  }
+}

@@ -1,0 +1,59 @@
+.site-projects {
+  background: var(--color-bg);
+  padding-block: calc(var(--spacing) * 24);
+  border-bottom: 1px solid var(--color-surface);
+}
+
+.site-projects__title {
+  font-family: 'Pretendard', var(--sans);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-fg);
+  margin: 0 0 calc(var(--spacing) * 10);
+}
+
+.site-projects__grid {
+  row-gap: calc(var(--spacing) * 12);
+}
+
+.site-projects__card {
+  grid-column: span 6;
+  display: block;
+  text-decoration: none;
+}
+
+.site-projects__thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin-bottom: calc(var(--spacing) * 5);
+}
+
+.site-projects__name {
+  font-family: 'Pretendard', var(--sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-fg);
+  margin: 0 0 calc(var(--spacing) * 1.5);
+}
+
+.site-projects__tag {
+  font-family: 'Pretendard', var(--sans);
+  font-size: 13px;
+  color: var(--color-fg);
+  opacity: 0.6;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .site-projects {
+    padding-block: calc(var(--spacing) * 14);
+  }
+
+  .site-projects__card {
+    grid-column: span 4;
+  }
+
+  .site-projects__grid {
+    row-gap: calc(var(--spacing) * 8);
+  }
+}
