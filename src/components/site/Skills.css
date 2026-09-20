@@ -5,7 +5,7 @@
 }
 
 .site-skills__title {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 24px;
   font-weight: 600;
   color: var(--color-fg);
@@ -34,7 +34,7 @@
 }
 
 .site-skills__label {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 16px;
   font-weight: 600;
   color: var(--color-fg);
@@ -42,7 +42,7 @@
 }
 
 .site-skills__desc {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 14px;
   line-height: 1.5;
   color: var(--color-fg);

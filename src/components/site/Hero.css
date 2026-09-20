@@ -94,7 +94,7 @@
 }
 
 .site-hero__blurb {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 14px;
   line-height: 1.6;
   color: var(--color-fg);
@@ -119,7 +119,7 @@
 
 .site-hero__blurb-link-label {
   display: block;
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.02em;

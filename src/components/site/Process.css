@@ -42,7 +42,7 @@
 }
 
 .site-process__num {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 13px;
   font-weight: 600;
   color: var(--color-accent);
@@ -50,7 +50,7 @@
 }
 
 .site-process__title {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 20px;
   font-weight: 600;
   color: var(--color-fg);
@@ -58,7 +58,7 @@
 }
 
 .site-process__desc {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 14px;
   line-height: 1.6;
   color: var(--color-fg);

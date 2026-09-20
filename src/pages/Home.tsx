@@ -1,5 +1,6 @@
 import { Header } from '../components/site/Header'
 import { Hero } from '../components/site/Hero'
+import { Approach } from '../components/site/Approach'
 import { Intro } from '../components/site/Intro'
 import { Skills } from '../components/site/Skills'
 import { Process } from '../components/site/Process'
@@ -14,6 +15,7 @@ export function Home() {
     <>
       <Header />
       <Hero />
+      <Approach />
       <Intro />
       <Skills />
       <Process />

@@ -20,7 +20,7 @@
 }
 
 .site-services__title {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 18px;
   font-weight: 600;
   color: var(--color-fg);
@@ -28,7 +28,7 @@
 }
 
 .site-services__desc {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 14px;
   line-height: 1.6;
   color: var(--color-fg);

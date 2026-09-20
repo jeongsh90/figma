@@ -17,7 +17,7 @@
 }
 
 .site-footer__logo {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-weight: 600;
   font-size: 16px;
   color: var(--color-fg);
@@ -25,7 +25,7 @@
 }
 
 .site-footer__copyright {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 13px;
   color: var(--color-fg);
   opacity: 0.6;
@@ -33,7 +33,7 @@
 }
 
 .site-footer__link {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 14px;
   color: var(--color-fg);
   text-decoration: none;

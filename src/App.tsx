@@ -1,6 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
 import { PixelTransitionProvider } from './context/pixel-transition'
-import { MouseTrail } from './components/MouseTrail'
 import { Home } from './pages/Home'
 import { About } from './pages/About'
 import './App.css'
@@ -14,7 +13,6 @@ function App() {
       </Routes>
 
       <div className="noise"></div>
-      <MouseTrail />
     </PixelTransitionProvider>
   )
 }

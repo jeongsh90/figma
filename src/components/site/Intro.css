@@ -13,7 +13,7 @@
 }
 
 .site-intro__eyebrow {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 13px;
   font-weight: 600;
   color: var(--color-accent);
@@ -23,7 +23,7 @@
 }
 
 .site-intro__body {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 18px;
   line-height: 1.6;
   color: var(--color-fg);

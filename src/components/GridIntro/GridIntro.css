@@ -13,7 +13,7 @@
   overflow: hidden;
   background: var(--intro-bg);
   color: var(--intro-fg);
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
 }
 
 .grid-intro__menu {

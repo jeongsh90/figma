@@ -21,7 +21,7 @@
 }
 
 .site-cta__button {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 14px;
   font-weight: 600;
   color: var(--color-fg);

@@ -5,7 +5,7 @@
 }
 
 .site-projects__title {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 24px;
   font-weight: 600;
   color: var(--color-fg);
@@ -29,7 +29,7 @@
 }
 
 .site-projects__name {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 18px;
   font-weight: 600;
   color: var(--color-fg);
@@ -37,7 +37,7 @@
 }
 
 .site-projects__tag {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-size: 13px;
   color: var(--color-fg);
   opacity: 0.6;

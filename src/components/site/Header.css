@@ -36,7 +36,7 @@
 }
 
 .site-header__logo {
-  font-family: 'Pretendard', var(--sans);
+  font-family: 'Pretendard Variable', var(--sans);
   font-weight: 600;
   font-size: 16px;
   color: var(--color-fg);
@@ -113,7 +113,7 @@
 
   .site-header__mobile-link {
     padding: calc(var(--spacing) * 4) calc(var(--spacing) * 6);
-    font-family: 'Pretendard', var(--sans);
+    font-family: 'Pretendard Variable', var(--sans);
     font-weight: 600;
     font-size: 15px;
     text-transform: uppercase;

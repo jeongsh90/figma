@@ -1,0 +1,245 @@
+.site-approach {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+  height: calc(100vh - calc(var(--spacing) * 4));
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--color-surface);
+}
+
+.site-approach__head {
+  position: relative;
+  flex: 0 0 auto;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: calc(var(--spacing) * 10);
+  padding: calc(var(--spacing) * 16) calc(var(--spacing) * 9) calc(var(--spacing) * 14);
+  border-bottom: 1px solid var(--color-surface);
+}
+
+.site-approach__head-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-approach__eyebrow {
+  font-family: 'Pretendard Variable', var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 calc(var(--spacing) * 5);
+}
+
+.site-approach__headline {
+  font-family: 'Roboto Serif', var(--sans);
+  font-weight: 800;
+  font-size: clamp(28px, 3.2vw, 44px);
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: var(--color-fg);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.site-approach__head-right {
+  align-self: flex-start;
+  margin-top: calc(var(--spacing) * 1);
+  font-family: 'Pretendard Variable', var(--sans);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-fg);
+  opacity: 0.7;
+}
+
+.site-approach__grid {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Each section below (head / icon / body) sets its OWN padding instead of
+   the card wrapping everything in one uniform inset - measured directly off
+   the reference: the header and text block each get real horizontal
+   padding, but the icon area gets NONE (0px sides), so it - and the corner
+   plus-marks and dashed dividers inside it - runs full-bleed to the card's
+   actual edges instead of sitting inset like the text above and below it. */
+.site-approach__card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-right: 1px solid var(--color-surface);
+}
+
+.site-approach__card:last-child {
+  border-right: none;
+}
+
+.site-approach__card-head {
+  position: relative;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 2);
+  padding: calc(var(--spacing) * 4) calc(var(--spacing) * 8) calc(var(--spacing) * 4);
+  border-bottom: 1px dashed var(--color-surface);
+}
+
+.site-approach__card-dot {
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+  background: var(--color-accent);
+}
+
+.site-approach__card-label {
+  flex: 1;
+  font-family: 'Pretendard Variable', var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-fg);
+}
+
+.site-approach__card-weight {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--color-fg);
+  opacity: 0.4;
+}
+
+.site-approach__card-icon {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: calc(var(--spacing) * 7);
+  border-bottom: 1px dashed var(--color-surface);
+}
+
+.site-approach__card-icon-inner {
+  color: var(--color-fg);
+  opacity: 0.55;
+}
+
+.site-approach__card-icon-inner svg {
+  width: calc(var(--spacing) * 16);
+  height: calc(var(--spacing) * 16);
+}
+
+.site-approach__icon-guide {
+  opacity: 0.55;
+}
+
+.site-approach__plus {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  color: var(--color-fg);
+  opacity: 0.4;
+}
+
+.site-approach__plus:nth-of-type(1) {
+  left: calc(var(--spacing) * 5);
+  top: calc(var(--spacing) * 5);
+}
+
+.site-approach__plus:nth-of-type(2) {
+  right: calc(var(--spacing) * 5);
+  top: calc(var(--spacing) * 5);
+}
+
+.site-approach__plus:nth-of-type(3) {
+  left: calc(var(--spacing) * 5);
+  bottom: calc(var(--spacing) * 5);
+}
+
+.site-approach__plus:nth-of-type(4) {
+  right: calc(var(--spacing) * 5);
+  bottom: calc(var(--spacing) * 5);
+}
+
+.site-approach__card-body {
+  flex: 0 0 auto;
+  padding: calc(var(--spacing) * 6) calc(var(--spacing) * 8) calc(var(--spacing) * 7);
+}
+
+.site-approach__card-title {
+  font-family: 'Pretendard Variable', var(--sans);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.25;
+  color: var(--color-fg);
+  margin: 0 0 calc(var(--spacing) * 3);
+}
+
+.site-approach__card-desc {
+  font-family: 'Pretendard Variable', var(--sans);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-fg);
+  opacity: 0.7;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .site-approach {
+    /* A fixed 100vh slide works for the wide 4-across desktop grid, but
+       four full cards (label/icon/title/description each) stacked into 2
+       or 1 columns need more room than one screen can fit without clipping
+       or squeezing the icons illegibly small - so height relaxes to grow
+       with content instead, while min-height keeps the "full slide" feel
+       when there's room for it. */
+    height: auto;
+    min-height: calc(100vh - calc(var(--spacing) * 4));
+  }
+
+  .site-approach__head {
+    grid-template-columns: 1fr;
+    gap: calc(var(--spacing) * 6);
+  }
+
+  .site-approach__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .site-approach__card {
+    border-bottom: 1px solid var(--color-surface);
+  }
+
+  .site-approach__card:nth-child(odd) {
+    border-right: 1px solid var(--color-surface);
+  }
+
+  .site-approach__card:nth-child(even) {
+    border-right: none;
+  }
+
+  .site-approach__card:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-approach__head {
+    padding-block: calc(var(--spacing) * 10) calc(var(--spacing) * 8);
+  }
+
+  .site-approach__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-approach__card {
+    border-right: none !important;
+    border-bottom: 1px solid var(--color-surface);
+  }
+
+  .site-approach__card:last-child {
+    border-bottom: none;
+  }
+}
