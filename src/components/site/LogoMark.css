@@ -1,0 +1,17 @@
+.logo-mark {
+  display: block;
+  width: 24px;
+  height: 24px;
+  color: var(--color-fg);
+  flex-shrink: 0;
+}
+
+.logo-mark__cell {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+
+.logo-mark__cell--filled {
+  fill: currentColor;
+}
