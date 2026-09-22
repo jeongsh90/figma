@@ -27,28 +27,28 @@ const ITEMS: ApproachItem[] = [
     weight: '15%',
     title: '고객 요구사항 정리',
     desc: '기획서와 기능 정의서를 분석하고 반응형 요구사항, 일정을 검토합니다. 초기에 명확히 정의해야 하향식 수정을 막을 수 있습니다.',
-    image: '/approach-1.svg',
+    image: `${import.meta.env.BASE_URL}approach-1.svg`,
   },
   {
     label: '디자인',
     weight: '20%',
     title: '디자인시스템 반영',
     desc: '컬러·타이포·스페이싱 토큰과 베이스 컴포넌트를 그리드 시스템 위에 구조화합니다. 사내 디자인 시스템 규칙을 엄격히 지켜 일관성을 유지합니다.',
-    image: '/approach-2.svg',
+    image: `${import.meta.env.BASE_URL}approach-2.svg`,
   },
   {
     label: '화면구현',
     weight: '45%',
     title: '화면 구현 및 인터랙티브 반영',
     desc: '컴포넌트 기반으로 화면을 구현하고 GSAP·Swiper로 인터랙션을 붙입니다. 공수가 가장 큰 단계라 기능 단위로 나눠 점진적으로 완성합니다.',
-    image: '/approach-3.svg',
+    image: `${import.meta.env.BASE_URL}approach-3.svg`,
   },
   {
     label: '검토',
     weight: '20%',
     title: '오류 검토 및 최적화',
     desc: '크로스 브라우징과 반응형, 렌더링 성능, 접근성을 전방위로 검증합니다. 배포 전 마지막 관문으로 시나리오별 테스트를 거칩니다.',
-    image: '/approach-4.svg',
+    image: `${import.meta.env.BASE_URL}approach-4.svg`,
   },
 ]
 
