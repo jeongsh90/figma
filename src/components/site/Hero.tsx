@@ -30,12 +30,12 @@ export function Hero() {
       <div className="site-container site-hero__foot">
         <div className="site-hero__area site-hero__area--left">
           <div className="site-hero__title-block">
-            <h1 className="site-hero__title">Sanghun Jeong</h1>
             <p className="site-hero__subtitle">
               <span className="site-hero__title-strong">UX·UI Design</span>{' '}
               <span className="site-hero__title-x">x</span>{' '}
               <span className="site-hero__title-strong">Publishing</span>
             </p>
+            <h1 className="site-hero__title">Sanghun Jeong</h1>
           </div>
         </div>
         <div className="site-hero__area site-hero__area--top-right">

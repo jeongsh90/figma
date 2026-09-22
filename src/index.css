@@ -32,8 +32,8 @@
 
   --grid-columns: 12;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: 'Pretendard Variable', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Pretendard Variable', system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -159,6 +159,7 @@ body {
   overflow: hidden;
   box-sizing: border-box;
   background: var(--color-bg);
+  
 }
 
 @media (max-width: 640px) {
